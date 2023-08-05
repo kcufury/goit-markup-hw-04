@@ -1,58 +1,60 @@
 :root {
-    --background-color: white, #FFFFFF;
-    --background-color: ocean, #404BBF;
-    --background-color: navyblue, #2E2F42;
-    --background-color: --cloud, #f4f4fd;
+    --background-main-color: #FFFFFF;
+    --background-fourth-color: #404BBF;
+    --background-third-color: #2E2F42;
+    --background-secondary-color: #f4f4fd;
+    --background-fifth-color: rgba(46, 47, 66, 0.70)
 
     --font-heading: 'Raleway', serif;
     --font-text: 'Roboto', sans-serif;
 
-    --font-color: slate, #434455;
-    --font-color: navyblue, #2E2F42;
+    --font-third-color: #404BBF;
+    --font-secondary-color:#434455;
+    --font-main-color: #2E2F42;
 
-    --brand-color: iris, #4D5AE5;
+    --brand-color: #4D5AE5;
 
-
-
+    --border-secondary-color: #8E8F99
+    --border-main-color: #E7E9FC;
 }
 
 .fillter-contact-1 a:hover,
 .fillter-contact-2 a:hover {
-    color: var(--iris, #4D5AE5);
+    color: var(--brand-color);
 }
 
 .fillter-contact-1 a:focus,
 .fillter-contact-2 a:focus {
-    color: var(--iris, #4D5AE5);
+    color: var(--brand-color);
 }
 
 .fillter-web-links a:hover {
-    color: var(--iris, #4D5AE5);
+    color: var(--brand-color);
 }
 
 .fillter-web-links a:focus {
-    color: var(--iris, #4D5AE5);
+    color: var(--brand-color);
     
 }
 
 
-.social-links a:hover {
+.social-links button:hover {
     padding: 12px 24px;
     border-radius: 4px;
-    color: var(--white, #FFFFFF);
-    background: var(--ocean, #404BBF);
+    color: var(--background-main-color);
+    background: var(--background-fourth-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.social-links a:focus {
+.social-links button:focus {
     padding: 12px 24px;
     border-radius: 4px;
-    color: var(--white, #FFFFFF);
-    background: var(--ocean, #404BBF);
+    color: var(--background-main-color);
+    background: var(--background-fourth-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.container-1 {
+.container {
     display: flex;
     align-items: center;
     width: 1158px;
@@ -60,72 +62,9 @@
     padding: 0 15px 0 15px;
 }
 
-.container-2 {
-    width: 1158px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding-top: 96px;
-
-}
-
-.container-3 {
-    width: 1158px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 120px;
-
-}
-
-.container-4 {
-    width: 1158px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 120px;
-    margin-top: 82px;
-}
-
-.container-5 {
-    width: 1158px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 72px;
-}
-
-.container-6 {
-    width: 1158px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 72px;
-}
-
-.container-7 {
-    width: 1158px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: space-between;
-    padding: 0;
-    margin-top: 72px;
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 header {
@@ -137,7 +76,7 @@ header {
     align-items: center;
     flex-shrink: 0;
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFFFFF);
+    background: var(--background-main-color);
 }
 
 body {
@@ -145,7 +84,7 @@ body {
     margin: 0;
     width: 1440px;
     min-height: 100%;
-    background: var(--white, #FFFFFF);
+    background: var(--background-main-color);
 
 }
 
@@ -168,11 +107,11 @@ button {
 
 .fillter-web-links {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0px;
     gap: 40px;
     width: auto;
-    height: 72px;
     flex-shrink: 0;
 }
 
@@ -184,7 +123,7 @@ button {
 
 .fillter-contact-links {
     display: flex;
-    color: var(--slate, #434455);
+    color: var(--font-secondary-color);
     /* Body */
     text-align: center;
     font-size: 16px;
@@ -209,7 +148,7 @@ button {
     width: 153px;
     height: 24px;
     display: flex;
-    color: var(--slate, #434455);
+    color: var(--font-secondary-color);
     /* Body */
     text-align: center;
     font-size: 16px;
@@ -225,7 +164,7 @@ button {
     width: 44px;
     height: fit-content;
     padding: 0px;
-    color: var(--iris, #4D5AE5);
+    color: var(--brand-color);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
@@ -244,24 +183,21 @@ button {
     width: fit-content;
     align-items: center;
     flex-shrink: 0;
-    margin-right: 76px;
+    margin: 0px 70px 0px 0px;
 }
 
 .fillter-logo-links-bottom {
     display: flex;
     align-items: center;
-    height: 24px;
     width: fit-content;
     align-items: center;
     flex-shrink: 0;
-    margin-right: 76px;
+    margin: 0px 0px 18px 156px;
 }
 
-.fillter-links-1 a,
-.fillter-links-2 a,
-.fillter-links-3 a{
+.fillter-links a{
     display: flex;
-    color: var(--navyblue, #2E2F42);
+    color: var(--font-main-color);
     /* Body Medium */
     width: fit-content;
     height: 24px;
@@ -286,22 +222,24 @@ nav li .fillter-links {
     margin-right: auto;
     width: 71px;
     padding-left: 0px;
-    color: var(--navyblue, #2E2F42);
+    color: var(--font-main-color);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;
+    line-height: 1.17;
     /* 116.667% */
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 
 .main-info {
     display: flex;
-    background: var(--navyblue, #2E2F42);
-    width: auto;
-    height: 600px;
+    background: var(--font-main-color);
+    background-image: url(/goit-markup-hw-04/images/office-people.jpg);
+    background-blend-mode: var(--background-fifth-color);
+    background-size: cover;
+    background-position: center;
     flex-shrink: 0;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -309,10 +247,11 @@ nav li .fillter-links {
     justify-content: center;
     align-items: center;
     padding: 188px 0;
+    
 }
 
 .fillter-service-btn {
-    color: var(--white, #FFFFFF);
+    color: var(--background-main-color);
     /* Button Text */
     font-size: 16px;
     font-weight: 500;
@@ -324,22 +263,38 @@ nav li .fillter-links {
     align-items: flex-start;
     gap: 10px;
     border-radius: 4px;
-    background: var(--iris, #4D5AE5);
+    background: var(--brand-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .fillter-service-btn:hover {
-    background-color: var(--iris, #404BBF);
+    background-color: var(--background-fourth-color);
 }
 
 .fillter-service-btn:focus {
-    background-color: var(--iris, #404BBF);
+    background-color: var(--background-fourth-color);
+}
+
+.fillter-icons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: var(--background-secondary-color);
+    border-radius: 4px;
+}
+
+.fillter-icons {
+    display: flex;
+    width: 64px;
+    height: 64px;
 }
 
 .fillter-business {
     display: flex;
     width: 496px;
-    color: var(--white, #FFFFFF);
+    color: var(--background-main-color);
     text-align: center;
     /* Header 1 */
     font-size: 56px;
@@ -352,7 +307,7 @@ nav li .fillter-links {
 .order-service {
     align-items: center;
     width: 496px;
-    color: var(--white, #FFFFFF);
+    color: var(--background-main-color);
     text-align: center;
     /* Header 1 */
     font-size: 56px;
@@ -368,23 +323,21 @@ nav li .fillter-links {
     padding: 0;
     border: none;
     background: none;
-    text-transform: uppercase;
-    color: var(--iris, #4D5AE5);
+    color: var(--brand-color);
     text-align: center;
     /* Button Text */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     /* 150% */
-    letter-spacing: 0.64px;
+    letter-spacing: 0.02em;
     cursor: pointer;
 }
 
 .side-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0;
+    margin: 120px 0px 0px 156px;
     padding: 0;
     gap: 24px;
     flex-direction: row;
@@ -395,7 +348,7 @@ nav li .fillter-links {
     display: flex;
     height: auto;
     width: 264px;
-    color: var(--navyblue, #2E2F42);
+    color: var(--font-main-color);
     /* Header 3 */
     font-size: 20px;
     font-weight: 500;
@@ -426,15 +379,14 @@ nav li .fillter-links {
     flex-direction: column;
     align-content: flex-start;
     align-items: center;
-    margin-top: 120px;
-    background: var(--white, #FFFFFF);
+    background: var(--background-main-color);
 }
 
 .team {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--navyblue, #2E2F42);
+    color: var(--font-main-color);
     text-align: center;
     /* Header 2 */
     font-size: 36px;
@@ -443,7 +395,7 @@ nav li .fillter-links {
     /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin: 0;
+    margin: 120px 0px 72px 0px;
     flex-direction: column;
     align-content: flex-start;
 }
@@ -454,13 +406,20 @@ nav li .fillter-links {
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 0px 0px 4px 4px;
-    background: var(--white, #FFFFFF);
+    padding: 0px 0px 0px 0px;
+    height: 438px;
+    background: var(--background-main-color);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+
+.fillter-social-img {
+    margin-bottom: 32px;
+}
+
+
 .fillter-team-names {
-    color: var(--navyblue, #2E2F42);
+    color: var(--font-main-color);
     text-align: center;
     /* Header 3 */
     font-size: 20px;
@@ -473,7 +432,7 @@ nav li .fillter-links {
 }
 
 .fillter-team-ocupation {
-    color: var(--slate, #434455);
+    color: var(--font-secondary-color);
     text-align: center;
     /* Body */
     font-size: 16px;
@@ -483,13 +442,87 @@ nav li .fillter-links {
     margin-top: 0px;
 }
 
+.fillter-customers {
+    width: 1440px;
+    height: 432px;
+    display: flex;
+    align-items: center;
+}
+
+.fillter-social-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 15px 0px 5px 0px;
+}
+
+.fillter-social-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.fillter-social {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.fillter-customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-main-color);
+    text-align: center;
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    /* 111.111% */
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+}
+
+.fillter-bottom-ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 72px 0px 120px 0px;
+}
+
+
+.fillter-bottom-icons-list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 1440px;
+    gap: 24px;
+}
+
+.fillter-bottom-icons {
+    display: flex;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslate,#8E8F99);
+    margin: 0;
+}
+
 menu,
 li {
     list-style-type: none;
 }
 
-.fillter-item {
-    --brand-color: var(--iris, #4D5AE5);
+.fillter-item button{
+    --brand-color: var(--brand-color);
     text-align: inherit;
     /* Button Text */
     font-size: 16px;
@@ -522,7 +555,7 @@ li {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
+    background: var(--background-secondary-color);
 }
 
 .portfolio-list {
@@ -532,7 +565,7 @@ li {
     flex-direction: column;
     align-items: normal;
     flex-shrink: 0;
-    background: var(--white, #FFFFFF);
+    background: var(--background-main-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -551,7 +584,7 @@ li {
     display: inline;
     width: 290px;
     height: 24px;
-    color: var(--navyblue, #2E2F42);
+    color: var(--font-main-color);
 
     /* Header 3 */
     font-size: 20px;
@@ -562,7 +595,7 @@ li {
     padding-bottom: 0px;
     flex-direction: column;
     flex-shrink: 0;
-    background: var(--white, #FFFFFF);
+    background: var(--background-main-color);
 }
 
 .fillter-portfolio-sidetext {
@@ -570,7 +603,7 @@ li {
     flex-direction: row;
     width: fit-content;
     height: 24px;
-    color: var(--slate, #434455);
+    color: var(--font-secondary-color);
     /* Body */
     font-size: 16px;
     line-height: 1.5;
@@ -583,18 +616,16 @@ li {
     flex-direction: column;
     justify-content: center;
     align-content: space-around;
-    align-items: center;
     width: auto;
     height: 312px;
-    background: var(--navyblue, #2E2F42);
+    background: var(--font-main-color);
 }
 
 .fillter-bottom-studio {
     display: flex;
     width: 44px;
-    height: fit-content;
     padding: 0px;
-    color: var(--iris, #4D5AE5);
+    color: var(--brand-color);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
@@ -610,17 +641,16 @@ li {
 .fillter-footer-name {
     display: flex;
     width: 71px;
-    height: 21px;
     padding: 0%;
     flex-direction: column;
     justify-content: left;
-    color: var(--cloud, #F4F4FD);
+    color: var(--background-secondary-color);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
     /* 116.667% */
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 
 }
@@ -628,14 +658,13 @@ li {
 .fillter-footer-info {
     display: flex;
     width: 264px;
-    height: fit-content;
-    color: var(--cloud, #F4F4FD);
+    color: var(--background-secondary-color);
     /* Body */
     font-size: 16px;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 156px;
     gap: 18px;
     justify-content: center
 }
@@ -643,20 +672,25 @@ li {
 .fillter-studio-info {
     display: flex;
     margin: auto;
-    width: 1128px;
+    width: 1440px;
     height: 412px;
     flex-direction: column;
-    margin-top: 120px;
+    align-items: center;
+    margin: 120px 0px 0px 0px;
 }
 
 .fillter-img {
     display: flex;
+    gap: 24px;
+    padding: 0px 0px 0px 15px;
+    margin: 0;
+    flex-direction: row;
 }
 
 .fillter-studio-paragraph {
     display: flex;
-    margin: 0;
-    color: var(--navyblue, #2E2F42);
+    margin: 0px 0px 72px 0px;
+    color: var(--font-main-color);
     text-align: center;
     /* Header 2 */
     font-size: 36px;
@@ -672,7 +706,7 @@ li {
     width: 264px;
     height: fit-content;
     margin: 0px 0px 0px 0px;
-    color: var(--slate, #434455);
+    color: var(--font-secondary-color);
     /* Body */
     font-size: 16px;
     line-height: 1.5;
