@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     width: 1158px;
-    margin: 0, auto;
+    margin: 0;
     padding: 0 15px 0 15px;
 }
 
@@ -71,8 +71,8 @@ header {
     display: flex;
     flex-direction: row;
     width: auto;
-    justify-content: space-around;
     height: 72px;
+    justify-content: space-around;
     align-items: center;
     flex-shrink: 0;
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
@@ -178,10 +178,8 @@ button {
 }
 
 .fillter-logo-links {
-    align-items: center;
     height: 24px;
     width: fit-content;
-    align-items: center;
     flex-shrink: 0;
     margin: 0px 70px 0px 0px;
 }
@@ -192,7 +190,7 @@ button {
     width: fit-content;
     align-items: center;
     flex-shrink: 0;
-    margin: 0px 0px 18px 156px;
+    
 }
 
 .fillter-links a{
@@ -205,8 +203,6 @@ button {
     font-weight: 500;
     line-height: 1.5;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
     align-items: flex-start;
     /* 150% */
     letter-spacing: 0.02em;
@@ -232,12 +228,10 @@ nav li .fillter-links {
     text-transform: uppercase;
 }
 
-
 .main-info {
     display: flex;
     background: var(--font-main-color);
-    background-image: url(/goit-markup-hw-04/images/office-people.jpg);
-    background-blend-mode: var(--background-fifth-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(/goit-markup-hw-04/images/office-people.jpg);
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -247,7 +241,6 @@ nav li .fillter-links {
     justify-content: center;
     align-items: center;
     padding: 188px 0;
-    
 }
 
 .fillter-service-btn {
@@ -408,6 +401,7 @@ nav li .fillter-links {
     margin: auto;
     padding: 0px 0px 0px 0px;
     height: 438px;
+    border-radius: 0px 0px 4px 4px;
     background: var(--background-main-color);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -522,7 +516,7 @@ li {
 }
 
 .fillter-item button{
-    --brand-color: var(--brand-color);
+    color: var(--brand-color);
     text-align: inherit;
     /* Button Text */
     font-size: 16px;
@@ -551,7 +545,7 @@ li {
     letter-spacing: 0.64px;
 }
 
-.social-links li a {
+.social-links button{
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--cornflower, #E7E9FC);
@@ -561,14 +555,14 @@ li {
 .portfolio-list {
     width: 360px;
     padding: 0;
-    margin: 0;
+    margin-left: 156px;
     flex-direction: column;
     align-items: normal;
     flex-shrink: 0;
     background: var(--background-main-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 48px 24px;
 }
 
 .portfolio-list img,
@@ -613,10 +607,11 @@ li {
 
 .fillter-bottom-section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
-    width: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    width: 1440px;
     height: 312px;
     background: var(--font-main-color);
 }
@@ -664,9 +659,21 @@ li {
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    margin: 0px 0px 0px 156px;
     gap: 18px;
     justify-content: center
+}
+
+.fillter-footer-icons-list {
+    display: flex;
+    align-items: center; 
+    width: 264px;
+    margin: 0px 0px 0px 120px;
+    flex-wrap: nowrap;
+}
+
+.fillter-bottom-section-logo {
+    margin-left: 156px;
+    width: 264px;
 }
 
 .fillter-studio-info {
@@ -713,3 +720,38 @@ li {
     /* 150% */
     letter-spacing: 0.02em;
 }
+
+.fillter-bottom-social {
+    display: flex;
+    justify-content: center;
+}
+
+.fillter-social-heading {
+    display: flex;
+    width: 103px;
+    color: var(--background-main-color);
+    /* Body Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.fillter-socialmedia-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+}
+
+.fillter-footer-social-links {
+    gap: 16px;
+    cursor: pointer;
+}
+
