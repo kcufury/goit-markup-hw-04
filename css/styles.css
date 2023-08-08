@@ -160,7 +160,6 @@ button {
 
 .fillter-studio {
     width: 44px;
-    padding: 0px;
     color: var(--brand-color);
     font-family: Raleway;
     font-size: 18px;
@@ -211,7 +210,7 @@ nav li .fillter-links {
 
 .fillter-name {
     display: inline-flex;
-    margin-right: auto;
+    padding-right: auto;
     width: 71px;
     padding-left: 0px;
     color: var(--font-main-color);
@@ -451,12 +450,17 @@ nav li .fillter-links {
     gap: 24px;
 }
 
-.fillter-social {
+.fillter-social-1,
+.fillter-social-2,
+.fillter-social-3,
+.fillter-social-4 {
     width: 40px;
     height: 40px;
     cursor: pointer;
     
 }
+
+
 
 .fillter-customers {
     display: flex;
@@ -804,13 +808,13 @@ li {
     padding: 0px 0px 0px 0px;
 }
 
-.fillter-social:hover use{
-    background-image: var(--background-sixth-color), url(/goit-markup-hw-04/images/socialmedia-icons.svg#);
-    background: var(--background-sixth-color);
+.fillter-social-1:hover,
+.fillter-social-2:focus {
+    background-image: url(/goit-markup-hw-04/images/socialmedia-symbol-defs.svg#icon-icon-insta);
+    
 }
 
 .fillter-social:focus use{
-    background-image: var(--background-sixth-color), url(/goit-markup-hw-04/images/socialmedia-icons.svg#);
-    background: var(--background-sixth-color);
+    background-image: url(/goit-markup-hw-04/images/socialmedia-icons.svg#);
+    
 }
-
