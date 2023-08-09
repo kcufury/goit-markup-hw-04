@@ -3,7 +3,7 @@
     --background-fourth-color: #404BBF;
     --background-third-color: #2E2F42;
     --background-secondary-color: #f4f4fd;
-    --background-fifth-color: rgba(46, 47, 66, 0.70)
+    --background-fifth-color: rgba(46, 47, 66, 0.70);
     --background-sixth-color: #31D0AA;
     --font-heading: 'Raleway', serif;
     --font-text: 'Roboto', sans-serif;
@@ -11,7 +11,7 @@
     --font-secondary-color:#434455;
     --font-main-color: #2E2F42;
     --brand-color: #4D5AE5;
-    --border-secondary-color: #8E8F99
+    --border-secondary-color: #8E8F99;
     --border-main-color: #E7E9FC;
 }
 
@@ -354,7 +354,7 @@ nav li .fillter-links {
 .studio-info {
     width: 1128px;
     flex-shrink: 0;
-    margin-top: 552px;
+    padding-top: 552px;
 }
 
 .fillter-team-section {
@@ -380,7 +380,7 @@ nav li .fillter-links {
     /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin: 120px 0px 72px 0px;
+    padding: 120px 0px 72px 0px;
     flex-direction: column;
     align-content: flex-start;
 }
@@ -450,14 +450,12 @@ nav li .fillter-links {
     gap: 24px;
 }
 
-.fillter-social-1,
-.fillter-social-2,
-.fillter-social-3,
-.fillter-social-4 {
+.fillter-social {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    
+    border-radius: 50%;
+    background-color: var(--brand-color);
 }
 
 
@@ -499,12 +497,7 @@ nav li .fillter-links {
     gap: 24px;
 }
 
-.fillter-bottom-icons-1,
-.fillter-bottom-icons-2,
-.fillter-bottom-icons-3,
-.fillter-bottom-icons-4,
-.fillter-bottom-icons-5,
-.fillter-bottom-icons-6 {
+.fillter-bottom-icons {
     display: flex;
     justify-content: center;
     width: 168px;
@@ -516,36 +509,12 @@ nav li .fillter-links {
 }
 
 
-.fillter-bottom-icons-1:hover
-.fillter-bottom-icons-1:focus {
-
-    background-image: url(./images/hover-symbol-defs.svg#icon-hover-logo-1);
-}
-
-.fillter-bottom-icons-2:hover
-.fillter-bottom-icons-2:focus {
-    background-image: url(./images/hover-symbol-defs.svg#icon-hover-logo-2);
-}
-
-.fillter-bottom-icons-3:hover
-.fillter-bottom-icons-3:focus {
-    background-image: url(./images/hover-symbol-defs.svg#icon-hover-logo-3);
-}
-
-.fillter-bottom-icons-4:hover
-.fillter-bottom-icons-4:focus {
-    background-image: url(./images/hover-symbol-defs.svg#icon-hover-logo-4);
-}
-
-.fillter-bottom-icons-5:hover
-.fillter-bottom-icons-5:focus {
-    background-image: url(./images/hover-symbol-defs.svg#icon-hover-logo-5);
-}
-
-
-.fillter-bottom-icons-6:hover
-.fillter-bottom-icons-6:focus {
-    background-image: url(./images/hover-symbol-defs.svg#icon-hover-logo-6);
+.fillter-bottom-icons:hover,
+.fillter-bottom-icons:focus {
+    fill: #404BBF;
+    border-color: #404BBF;
+    
+     
 }
 
 menu,
@@ -563,8 +532,8 @@ li {
     /* 150% */
     letter-spacing: 0.64px;
     text-decoration: none;
-    padding: 12px 24px;
     cursor: pointer;
+    border: 1px solid var(--cornflower, #E7E9FC);
 }
 
 .social-links {
@@ -582,12 +551,13 @@ li {
     /* 150% */
     letter-spacing: 0.64px;
     padding-left: 120px;
+    margin: 0;
 }
 
 .social-links button{
     padding: 12px 24px;
     border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
+    border: none;
     background: var(--background-secondary-color);
 }
 
@@ -797,24 +767,22 @@ li {
     margin: 0;
     gap: 16px;
 }
-.fillter-footer-social-links{
+.fillter-footer-social-links {
     display: flex;
     gap: 16px;
+    
 }
 
 .fillter-footer-social-links svg{
     cursor: pointer;
     gap: 16px;
     padding: 0px 0px 0px 0px;
-}
-
-.fillter-social-1:hover,
-.fillter-social-2:focus {
-    background-image: url(/goit-markup-hw-04/images/socialmedia-symbol-defs.svg#icon-icon-insta);
     
 }
 
-.fillter-social:focus use{
-    background-image: url(/goit-markup-hw-04/images/socialmedia-icons.svg#);
-    
+.fillter-social:hover,
+.fillter-social:focus {
+    border-radius: 50%;
+    background-color: #31D0AA;
 }
+
