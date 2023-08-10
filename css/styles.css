@@ -49,13 +49,44 @@
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
 
 .container {
-    display: flex;
-    align-items: center;
     width: 1158px;
-    margin: 0;
-    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .section {
@@ -76,17 +107,12 @@ header {
 
 body {
     font-family: "Roboto", sans-serif;
-    margin: auto;
-    width: 1440px;
-    min-height: 100%;
     background: var(--background-main-color);
 
 }
 
 .hidden-heading {
     visibility: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 a:link {
@@ -115,8 +141,6 @@ button {
 .head-links {
     display: flex;
     align-items: center;
-    margin: 20px 0px 20px 0px;
-    padding: 10px 0px 10px 0px;
 }
 
 
@@ -148,12 +172,14 @@ button {
     display: flex;
     color: var(--font-secondary-color);
     /* Body */
+    font-family: var(--font-text);
     text-align: center;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.23px;
-    margin-left: auto;
+    padding-left: auto;
 }
 
 
@@ -161,7 +187,7 @@ button {
 .fillter-studio {
     width: 44px;
     color: var(--brand-color);
-    font-family: Raleway;
+    font-family: var(--font-heading);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -174,9 +200,12 @@ button {
 }
 
 .fillter-logo-links {
+    display: flex;
+    align-items: center;
     width: fit-content;
+    align-items: center;
     flex-shrink: 0;
-    margin: 0px 70px 0px 0px;
+    padding-right: 76px;
 }
 
 .fillter-logo-links-bottom {
@@ -185,7 +214,8 @@ button {
     width: fit-content;
     align-items: center;
     flex-shrink: 0;
-    
+    margin-bottom: 16px;
+    margin: 0;
 }
 
 .fillter-links a{
@@ -193,6 +223,7 @@ button {
     color: var(--font-main-color);
     /* Body Medium */
     width: fit-content;
+    font-family: var(--font-text);
     height: 24px;
     font-size: 16px;
     font-weight: 500;
@@ -214,7 +245,7 @@ nav li .fillter-links {
     width: 71px;
     padding-left: 0px;
     color: var(--font-main-color);
-    font-family: Raleway;
+    font-family: var(--font-heading);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -285,6 +316,7 @@ nav li .fillter-links {
     color: var(--background-main-color);
     text-align: center;
     /* Header 1 */
+    font-family: var(--font-text);
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -292,18 +324,6 @@ nav li .fillter-links {
     letter-spacing: 1.12px;
 }
 
-.order-service {
-    align-items: center;
-    width: 496px;
-    color: var(--background-main-color);
-    text-align: center;
-    /* Header 1 */
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    /* 107.143% */
-    letter-spacing: 1.12px;
-}
 
 .fillter-order-service {
     display: flex;
@@ -314,22 +334,23 @@ nav li .fillter-links {
     color: var(--brand-color);
     text-align: center;
     /* Button Text */
+    font-family: var(--font-text);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
     cursor: pointer;
+    padding-top: 48px;
 }
 
 .side-info {
     display: flex;
-    justify-content: space-between;
-    margin: 120px 0px 0px 156px;
+    align-items: center;
+    margin: 0;
     padding: 0;
     gap: 24px;
     flex-direction: row;
-    width: 264px;
 }
 
 .fillter-paragraph {
@@ -337,6 +358,7 @@ nav li .fillter-links {
     width: 264px;
     color: var(--font-main-color);
     /* Header 3 */
+    font-family: var(--font-text);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -358,12 +380,8 @@ nav li .fillter-links {
 }
 
 .fillter-team-section {
-    display: flex;
-    flex-shrink: 0;
-    width: 1440px;
-    flex-direction: column;
-    align-content: flex-start;
-    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background: var(--background-main-color);
 }
 
@@ -380,18 +398,23 @@ nav li .fillter-links {
     /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding: 120px 0px 72px 0px;
+    padding-bottom: 120px;
     flex-direction: column;
-    align-content: flex-start;
+}
+
+.team-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+
 }
 
 .fillter-team-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: auto;
-    padding: 0px 0px 0px 0px;
     border-radius: 0px 0px 4px 4px;
     background: var(--background-main-color);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -407,12 +430,13 @@ nav li .fillter-links {
     color: var(--font-main-color);
     text-align: center;
     /* Header 3 */
+    font-family: var(--font-text);
     font-size: 20px;
     line-height: 1.2;
     /* 120% */
     letter-spacing: 0.02em;
     gap: 8px;
-    margin-bottom: 0px;
+    padding: 32px 0;
 
 }
 
@@ -420,11 +444,12 @@ nav li .fillter-links {
     color: var(--font-secondary-color);
     text-align: center;
     /* Body */
+    font-family: var(--font-text);
     font-size: 16px;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    margin-top: 0px;
+    padding: 16px 0px 34px 0px;
 }
 
 .fillter-customers {
@@ -468,22 +493,21 @@ nav li .fillter-links {
     color: var(--font-main-color);
     text-align: center;
     /* Header 2 */
-    font-family: Roboto;
+    font-family: var(--font-text);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     /* 111.111% */
     letter-spacing: 0.03em;
     text-transform: capitalize;
-    margin: 120px 0px 0px 0px;
+    padding: 120px 0;
 }
 
 .fillter-bottom-ul {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin: 72px 0px 120px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0;
     
 }
 
@@ -493,7 +517,6 @@ nav li .fillter-links {
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 1440px;
     gap: 24px;
 }
 
@@ -526,6 +549,7 @@ li {
     color: var(--brand-color);
     text-align: inherit;
     /* Button Text */
+    font-family: var(--font-text);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -544,13 +568,16 @@ li {
     text-align: center;
     text-emphasis: none;
     text-decoration: none;
+    font-family: var(--font-text);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     gap: 24px;
     /* 150% */
     letter-spacing: 0.64px;
-    padding-left: 120px;
+    padding-top: 96px;
+    padding-left: 191px;
+    padding-bottom: 72px;
     margin: 0;
 }
 
@@ -562,18 +589,22 @@ li {
 }
 
 .portfolio-list {
-    width: 360px;
-    padding-top: 72px;
-    padding-left: 156px;
     padding-bottom: 120px;
     flex-direction: column;
     align-items: normal;
-    flex-shrink: 0;
+    justify-content: center;
     background: var(--background-main-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px 24px;
     
+}
+
+.border-box {
+    border: 1px solid var(--cornflower, #E7E9FC);
+    padding: 0;
+    margin: 0;
+    border-top: none;
 }
 
 .portfolio-list-hover {
@@ -598,6 +629,7 @@ li {
     padding-top: 32px;
     margin: 0;
     /* Header 3 */
+    font-family: var(--font-text);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -618,28 +650,24 @@ li {
     padding-bottom: 25px;
     margin: 0;
     /* Body */
+    font-family: var(--font-text);
     font-size: 16px;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.32px;
+    margin: 0;
 }
 
 .fillter-bottom-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    width: 1440px;
+    padding: 100px 0;
     background: var(--font-main-color);
 }
 
 .fillter-bottom-studio {
     display: flex;
     width: 44px;
-    padding: 0px;
     color: var(--brand-color);
-    font-family: Raleway;
+    font-family: var(--font-heading);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -654,11 +682,10 @@ li {
 .fillter-footer-name {
     display: flex;
     width: 71px;
-    padding: 0%;
     flex-direction: column;
     justify-content: left;
     color: var(--background-secondary-color);
-    font-family: Raleway;
+    font-family: var(--font-heading);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -673,6 +700,7 @@ li {
     width: 264px;
     color: var(--background-secondary-color);
     /* Body */
+    font-family: var(--font-text);
     font-size: 16px;
     line-height: 1.5;
     /* 150% */
@@ -684,7 +712,6 @@ li {
 .fillter-footer-icons-list {
     display: flex;
     align-items: center; 
-    width: 264px;
     flex-wrap: nowrap;
     
 }
@@ -697,19 +724,13 @@ li {
 
 .fillter-studio-info {
     display: flex;
-    margin: 0;
-    width: 1440px;
     flex-direction: column;
-    align-items: center;
-    padding: 120px 0px 100px 0px;
+    padding-bottom: 120px;
 }
 
 .fillter-img {
     display: flex;
     gap: 24px;
-    padding: 0px 0px 0px 15px;
-    margin: 0;
-    flex-direction: row;
 }
 
 .fillter-studio-paragraph {
@@ -718,6 +739,7 @@ li {
     color: var(--font-main-color);
     text-align: center;
     /* Header 2 */
+    font-family: var(--font-text);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -732,6 +754,7 @@ li {
     padding: 0px 0px 0px 0px;
     color: var(--font-secondary-color);
     /* Body */
+    font-family: var(--font-text);
     font-size: 16px;
     line-height: 1.5;
     /* 150% */
@@ -748,7 +771,7 @@ li {
     width: 103px;
     color: var(--background-main-color);
     /* Body Medium */
-    font-family: Roboto;
+    font-family: var(--font-text);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -764,7 +787,6 @@ li {
     justify-content: center;
     flex-direction: column;
     padding: 0px 0px 43px 120px;
-    margin: 0;
     gap: 16px;
 }
 .fillter-footer-social-links {
