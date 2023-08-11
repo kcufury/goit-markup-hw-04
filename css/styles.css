@@ -34,12 +34,9 @@
 
 .social-links button:focus,
 .social-links button:hover {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
     color: var(--background-main-color);
     background: var(--background-fourth-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    
 }
 
 .portfolio-list-hover:hover,
@@ -85,7 +82,7 @@ ol {
 
 .child {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 
@@ -141,6 +138,8 @@ button {
 .head-links {
     display: flex;
     align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 
 
@@ -545,7 +544,7 @@ li {
     list-style-type: none;
 }
 
-.fillter-item button{
+.fillter-item > .button {
     color: var(--brand-color);
     text-align: inherit;
     /* Button Text */
@@ -614,7 +613,7 @@ li {
 .portfolio-list img,
 .portfolio-list li {
     border-radius: 0px 0px 4px 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
+    border: none
 }
 
 .portfolio-list li .fillter-portfolio-text {
@@ -709,6 +708,12 @@ li {
     justify-content: center
 }
 
+.fillter-footer-info-pos {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
 .fillter-footer-icons-list {
     display: flex;
     align-items: center; 
@@ -786,7 +791,8 @@ li {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 0px 43px 120px;
+    padding-left: 120px;
+    padding-bottom: 43px;
     gap: 16px;
 }
 .fillter-footer-social-links {
