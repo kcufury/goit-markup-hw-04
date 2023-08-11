@@ -346,10 +346,13 @@ nav li .fillter-links {
 .side-info {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     gap: 24px;
     flex-direction: row;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .fillter-paragraph {
@@ -435,7 +438,6 @@ nav li .fillter-links {
     /* 120% */
     letter-spacing: 0.02em;
     gap: 8px;
-    padding: 32px 0;
 
 }
 
