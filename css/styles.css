@@ -383,7 +383,6 @@ nav li .fillter-links {
 
 .fillter-team-section {
     padding-top: 120px;
-    padding-bottom: 120px;
     background: var(--background-main-color);
 }
 
@@ -414,17 +413,29 @@ nav li .fillter-links {
 
 .fillter-team-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    gap: 24px;
     border-radius: 0px 0px 4px 4px;
     background: var(--background-main-color);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.socialmedia-list {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
 
 .fillter-social-img {
     margin-bottom: 32px;
+}
+
+.social-icon {
+    text-align: center;
 }
 
 
@@ -443,14 +454,11 @@ nav li .fillter-links {
 
 .fillter-team-ocupation {
     color: var(--font-secondary-color);
-    text-align: center;
     /* Body */
     font-family: var(--font-text);
-    font-size: 16px;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    padding: 16px 0px 34px 0px;
 }
 
 .fillter-customers {
@@ -460,12 +468,10 @@ nav li .fillter-links {
 }
 
 .fillter-social-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 15px 0px 5px 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+
 }
 
 .fillter-social-ul {
@@ -475,24 +481,29 @@ nav li .fillter-links {
     justify-content: center;
     gap: 24px;
 }
-
-.fillter-social {
+.fillter-sm-icon {
     width: 40px;
     height: 40px;
-    cursor: pointer;
     border-radius: 50%;
     background-color: var(--brand-color);
 }
 
+.fillter-social {
+    width: 24px;
+    height: 24px;
+}
 
+
+.fillter-customers-section {
+    padding: 120px 0;
+}
 
 .fillter-customers {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: var(--font-main-color);
     text-align: center;
+    margin-bottom: 72px;
+    color: var(--font-main-color);
     /* Header 2 */
     font-family: var(--font-text);
     font-size: 36px;
@@ -501,7 +512,6 @@ nav li .fillter-links {
     /* 111.111% */
     letter-spacing: 0.03em;
     text-transform: capitalize;
-    padding: 120px 0;
 }
 
 .fillter-bottom-ul {
@@ -514,15 +524,10 @@ nav li .fillter-links {
 
 
 .fillter-bottom-icons-list {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    gap: 24px;
 }
 
 .fillter-bottom-icons {
-    display: flex;
+    display: block;
     justify-content: center;
     width: 168px;
     height: 88px;
@@ -724,7 +729,6 @@ li {
 }
 
 .fillter-bottom-section-logo {
-    padding-left: 156px;
     padding-top: 102px;
     padding-bottom: 100px;
 }
@@ -803,15 +807,15 @@ li {
     
 }
 
-.fillter-footer-social-links svg{
+.fillter-footer-social-links {
     cursor: pointer;
     gap: 16px;
     padding: 0px 0px 0px 0px;
     
 }
 
-.fillter-social:hover,
-.fillter-social:focus {
+.fillter-sm-icon:hover,
+.fillter-sm-icon:focus {
     border-radius: 50%;
     background-color: #31D0AA;
 }
