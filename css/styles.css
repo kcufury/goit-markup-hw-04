@@ -529,9 +529,13 @@ nav li .fillter-links {
     
 }
 
+
 .fillter-cms-icon:hover,
-.fillter-cms-icon:focus {
-    border-color: #404BBF;
+.fillter-cms-icon:focus,
+.fillter-cms-icon use:hover,
+.fillter-cms-icon use:focus {
+    border-color: var(--background-fourth-color);
+    fill: var(--background-fourth-color);
     
 }
 
@@ -796,6 +800,6 @@ li {
 .fillter-sm-icon:hover,
 .fillter-sm-icon:focus {
     border-radius: 50%;
-    background-color: #31D0AA;
+    background-color: var(--background-sixth-color);
 }
 
