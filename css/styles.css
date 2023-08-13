@@ -461,11 +461,6 @@ nav li .fillter-links {
     letter-spacing: 0.02em;
 }
 
-.fillter-customers {
-    width: 1440px;
-    display: flex;
-    align-items: center;
-}
 
 .fillter-social-list {
     padding-top: 32px;
@@ -501,8 +496,6 @@ nav li .fillter-links {
 }
 
 .fillter-customers {
-    display: flex;
-    justify-content: center;
     text-align: center;
     margin-bottom: 72px;
     color: var(--font-main-color);
@@ -513,7 +506,6 @@ nav li .fillter-links {
     line-height: 1.11;
     /* 111.111% */
     letter-spacing: 0.03em;
-    text-transform: capitalize;
 }
 
 .fillter-bottom-ul {
@@ -537,12 +529,11 @@ nav li .fillter-links {
     
 }
 
-.fillter-bottom-icons:focus,
-.fillter-bottom-icons:hover,
 .fillter-cms-icon:hover,
 .fillter-cms-icon:focus {
     fill: #404BBF;
     border-color: #404BBF;
+    
 }
 
 menu,
