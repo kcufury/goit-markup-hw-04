@@ -483,12 +483,36 @@ nav li .fillter-links {
     background-color: var(--brand-color);
 }
 
+.fillter-sm-icon:hover,
+.fillter-sm-icon:focus {
+    background-color: var(--background-fourth-color);
+    border-radius: 50%;
+}
 .fillter-social {
+    margin: 12px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .fillter-ftr-icon {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--brand-color);
+    }
+    
+    .fillter-ftr-social {
     margin: 8px;
     width: 24px;
     height: 24px;
 }
 
+.fillter-ftr-icon:hover,
+.fillter-ftr-icon:focus {
+    border-radius: 50%;
+    background-color: var(--background-sixth-color);
+}
 
 .fillter-customers-section {
     padding: 120px 0;
@@ -525,14 +549,14 @@ nav li .fillter-links {
     width: 168px;
     height: 88px;
     padding: 16px 32px;
-    
+    fill: var(--border-secondary-color);
 }
 
 
+.fillter-bottom-icons:hover,
+.fillter-bottom-icons:focus,
 .fillter-cms-icon:hover,
-.fillter-cms-icon:focus,
-.fillter-cms-icon use:hover,
-.fillter-cms-icon use:focus {
+.fillter-cms-icon:focus {
     border-color: var(--background-fourth-color);
     fill: var(--background-fourth-color);
     
@@ -796,9 +820,4 @@ li {
     
 }
 
-.fillter-sm-icon:hover,
-.fillter-sm-icon:focus {
-    border-radius: 50%;
-    background-color: var(--background-sixth-color);
-}
 
